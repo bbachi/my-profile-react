@@ -14,7 +14,7 @@ const Dashboard = () => {
                 Name:
             </div>
             <div className="col-md-6">
-                First Last
+                Ian MacDonald
             </div>
         </div>
         <div className="row">
@@ -22,7 +22,7 @@ const Dashboard = () => {
                 Age:
             </div>
             <div className="col-md-6">
-                99
+                26
             </div>
         </div>
         <div className="row">
@@ -30,7 +30,7 @@ const Dashboard = () => {
                 Occupation:
             </div>
             <div className="col-md-6">
-                blah blah blah
+                Software Engineer
             </div>
         </div>
         </Jumbotron>
