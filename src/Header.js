@@ -6,7 +6,7 @@ const Header = () => {
     return(
         <Jumbotron>
             <h1>Ian MacDonald</h1>
-            <p>I am Software Architect working on various technologies and trying to solve problems. Here is a sample use of ReactJS to host a static webpage. </p>
+            <p>I am an engineer that uses various technologies to solve problems. Here is a sample use of ReactJS to host a static webpage. </p>
         </Jumbotron>
     )
 }
