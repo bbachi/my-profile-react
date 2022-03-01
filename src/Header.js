@@ -5,8 +5,8 @@ const Header = () => {
     
     return(
         <Jumbotron>
-            <h1>Bhargav Bachina</h1>
-            <p>I am Software Architect working on various technologies and trying to solve problems.</p>
+            <h1>Ian MacDonald</h1>
+            <p>I am Software Architect working on various technologies and trying to solve problems. Here is a sample use of ReactJS to host a static webpage. </p>
         </Jumbotron>
     )
 }
