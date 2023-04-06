@@ -1,0 +1,29 @@
+pool:
+  name: Azure Pipelines
+steps:
+- script: |
+   npm install
+   
+  displayName: 'all dependencies'
+
+- script: 'set CI=true npm test'
+  displayName: 'Run tests'
+
+- script: |
+   npm run build
+   
+  displayName: Build
+
+- task: CopyFiles@2
+  displayName: 'Copy Files '
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/build'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: ArchiveFiles@2
+  displayName: 'Archive '
+  inputs:
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
